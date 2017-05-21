@@ -45,6 +45,36 @@ namespace CancellationToken
             }
             Console.WriteLine("Press enter to end the application");
             Console.ReadLine();
+
+            //string s = "test";
+            int s = 1;
+            switch (s)
+            {
+                case 1:
+                    s = 4;
+                    goto case 4;
+                case 4:
+                    s = 5;
+                    break;
+                default:
+                    break;
+            }
+
+            int[] values = { 1, 2, 3, 4, 5, 6 };
+            for (int x = 0, y = 1;
+            ((x < values.Length) && (y >= 0));
+            x++, y--)
+            {
+                Console.Write(values[x]);
+                Console.Write(values[y]);
+            }
+
+        
+
+            //for (;;)
+            //{
+            //    Console.WriteLine("H");
+            //}
         }
     }
 }
